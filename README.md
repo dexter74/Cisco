@@ -142,8 +142,8 @@ La puissance de 2 pour 13 bits: (2^13)-2 = 8190 Hôtes
 | Technicien      | 300           |
 | Vendeur         | 120           |
 
-La puissance (2<sup>9</sup>)-2 = 510 Hôtes pour les Techniciens
+La puissance (2<sup>9</sup>) - 2 = 510 Hôtes pour les Techniciens
 
-La puissance (2<sup>7</sup>)-2 = 126 Hôtes pour les Vendeurs
+La puissance (2<sup>7</sup>) - 2 = 126 Hôtes pour les Vendeurs
 
 
