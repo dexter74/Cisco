@@ -119,10 +119,23 @@ Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127
 
 
 #### IV. Calculer le nombre de machine
+| 8 Octets | Réseau  | Hôte    |
+| -------- | ------- | ------- |
+| 32 Bits  | 19 Bits | 13 Bits |
 
-Hôte = 32 Bits - 19 Bits réseau = 13 Bits
-2<sup>13</sup> - 2 = 8190 IP Disponibles !
+##### Calcul
+```
+32 - 19 = 13 Bits pour les hôtes
+La puissance de 2 pour 13 bits: (2^13)-2 = 8190 Hôtes
+```
 
 #### V. Calculer les sous réseaux
-L'équipe de Technicien compote 300 machines.
-La Puissance de 2 : 2<sup>9</sup> -2 = 510 Hôtes (On a consommé 9 Bits pour les hôtes)
+| Nom de l'équipe | IP nécessaire |
+| --------------- | ------------- |
+| Technicien      | 300           |
+| Vendeur         | 120           |
+
+La puissance (2<sup>9</sup>)-2 = 510 Hôtes pour les Techniciens
+La puissance (2<sup>7</sup>)-2 = 126 Hôtes pour les Vendeurs
+
+
