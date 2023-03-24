@@ -96,7 +96,6 @@ L'adresse de broadcast est 172.25.31.0
 192.168.100.0 / 19
 Technicien: 300
 Vendeur: 120
-On consommera 2 réseaux entier soit +1 au réseau
 ```
 #### II. Convertir en Binaire
 | Réseau       | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
@@ -113,10 +112,17 @@ On consommera 2 réseaux entier soit +1 au réseau
 | Adresse IP         | 192.168.100.0   | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 0 0 1 0 0      | 0 0 0 0 0 0 0 0       |
 | Masque de S/R      | 255.255.224.0   | 1 1 1 1 1 1 1 1      | 1 1 1 1 1 1 1 1      |  1 1 1 0 0 0 0 0      | 0 0 0 0 0 0 0 0       |
 | Adresse Réseau     | 192.168.96.0    | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 0 0 0 0 0      | 0 0 0 0 0 0 0 0       |
-| Broadcast (512 IP) | 192.168.97.255  | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 1 0 0 0 1      | 1 1 1 1 1 1 1 1       |
+| Broadcast (512 IP) | 192.168.127.255 | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 1 1 1 1 1      | 1 1 1 1 1 1 1 1       |
+
+Pour le Broadcast on passe la partie hôte à 1.
+Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127 
+
 
 #### IV. Calculer le nombre de machine
+
 Hôte = 32 Bits - 19 Bits réseau = 13 Bits
 2<sup>13</sup> - 2 = 8190 IP Disponibles !
 
-
+#### V. Calculer les sous réseaux
+L'équipe de Technicien compote 300 machines.
+La Puissance de 2 : 2<sup>9</sup> -2 = 510 Hôtes (On a consommé 9 Bits pour les hôtes)
