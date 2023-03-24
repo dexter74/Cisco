@@ -123,18 +123,17 @@ Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127
 
 
 
+#### IV. Calculer le nombre de machines
+```
+Nous avons 19 Bits pour le réseau. (CIDR)
+ > 32 Bits - 19 Bits (Réseau) = 13 Bits (Hôtes) 
+ > La puissance de 2 pour 13 Bits. (2^13 - 2)
+ > Soit 8190 Machines disponibles
+```
 
-
-#### IV. Calculer le nombre de machine
 | 8 Octets | Réseau  | Hôte    |
 | -------- | ------- | ------- |
 | 32 Bits  | 19 Bits | 13 Bits |
-
-##### Calcul
-```
-32 - 19 = 13 Bits pour les hôtes
-La puissance de 2 pour 13 bits: (2^13)-2 = 8190 Hôtes
-```
 
 
 #### V. Calculer le bit Hôte / Réseau
