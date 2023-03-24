@@ -142,8 +142,7 @@ Nous avons 19 Bits pour le réseau. (CIDR)
 | Technicien      | 300           | (2<sup>9</sup>)  | 510   | 32 - 9 = 23 (254)     | 255.255.254.0   |
 | Vendeur         | 120           | (2<sup>7</sup>)  | 126   | 32 - 7 = 25 (128)     | 255.255.255.128 |
 
-
 ```
-/23 = 8 + 8 + 7 = 254 car 128 + 64 + 32 + 16 + 8 + 4 + 2  dans le troisième octet.
-/25 = 8 + 8 + 9 = 128 car il consomme 8 bits du 3ème octet et 1 bits du dernier octet soit 127.
+/23 = 8 + 8 + 7 = 128 + 64 + 32 + 16 + 8 + 4 + 2
+/25 = 8 + 8 + 9 = 8 + 1
 ```
