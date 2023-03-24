@@ -111,9 +111,10 @@ Vendeur: 120
 
 #### III. La règle Xor (1 Et 1 = 1)
 
-Pour le Broadcast on passe la partie hôte à 1.
-
-Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127 
+```
+Broadcast: On passe les bits hôtes à 1. (3ème et 4ème octet)
+         : On calcul le 3ème bits
+```
 
 | Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
 | ------------------ | --------------- | -------------------- | -------------------- | --------------------- | --------------------- |
