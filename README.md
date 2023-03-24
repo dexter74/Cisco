@@ -62,10 +62,17 @@
 172.25.30.50 / 23
 ```
 
-#### II. Convertir le masque
+#### II. Convertir le Masque de S/R (255.255.254.0)
 ```
 23 Bits = 8 + 8 + 7
 7 Bits = 128 + 64 + 32 + 16 + 8 + 4 + 2 = 254
 ```
 
-**Le masque de S/R**: 255.255.253.0
+#### III. Le nombre Magic
+```
+On prend le dernier Octet côté réseau soit 30  (172.25.30.XX)
+On prend le dernier Octet côté Hôte   soit 254 (255.255.254.XX)
+
+On Soustrait: 256 - Octet hôte => 256 - 254 = 2
+
+```
