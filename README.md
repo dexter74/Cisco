@@ -17,7 +17,7 @@
 
 <br />
 
-#### C. Calculer la partie Réseau et Hôte (+Broadcast) 
+#### C. Calculer la partie Réseau et Hôte
 
 | Description   | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet |
 | ------------- | -------------------- | -------------------- | --------------------- |
