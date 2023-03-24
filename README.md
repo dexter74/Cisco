@@ -29,7 +29,6 @@
 <br /> 
 
 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 #### B. Exemple 1: Méthode Classic
 #### I. CIDR
@@ -90,8 +89,9 @@ L'adresse de broadcast est 172.25.31.0
 ```
 
 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
-#### C. Exercice 
+#### C. Exercice  (Studi)
 #### I. CIDR + Utilisateur
 ```
 192.168.100.0 / 19
@@ -109,7 +109,6 @@ Vendeur: 120
 | 255          | 1   | 1  | 1  | 1  | 1 | 1 | 1 | 1 |
 
 
-
 #### III. La règle Xor (1 Et 1 = 1)
 
 Pour le Broadcast on passe la partie hôte à 1.
@@ -124,21 +123,21 @@ Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127
 | Broadcast          | 192.168.127.255 | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 1 1 1 1 1      | 1 1 1 1 1 1 1 1       |
 
 
-
-#### IV. Calculer le nombre de machines
+#### IV. Calculer le nombre de machines (Global)
 ```
 Nous avons 19 Bits pour le réseau. (CIDR)
  > 32 Bits - 19 Bits (Réseau) = 13 Bits (Hôtes) 
  > La puissance de 2 pour 13 Bits. (2^13 - 2)
  > Soit 8190 Machines disponibles
 ```
-
 | 8 Octets | Réseau  | Hôte    |
 | -------- | ------- | ------- |
 | 32 Bits  | 19 Bits | 13 Bits |
 
 
-#### V. Calculer le bit Hôte / Réseau
+
+
+#### V. Calculer la quantité de Bits nécessaire
 | Nom de l'équipe | IP nécessaire | Bits Hôtes       | Hôtes | Bits Réseau (Restant) | Masque de S/R   |
 | --------------- | ------------- | ---------------- | ------| --------------------  | --------------- |
 | Technicien      | 300           | (2<sup>9</sup>)  | 510   | 32 - 9 = 23 (254)     | 255.255.254.0   |
