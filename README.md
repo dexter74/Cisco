@@ -150,9 +150,17 @@ Nous avons 19 Bits pour le réseau. (CIDR)
 
 #### VI. Calcule le réseau
 
-Technicien: 300 Postes (2 Réseaux = 512 IP)
+On commence par la première plage IP : 192.168.96.0.
 
-On commence par la première plage IP : 192.168.96.0 .
+
+Technicien: 300 Postes
+```
+- Bits Hôte: 2^9 = 512 IP - 2 = 510 Hôtes
+- Calculer la quantité de réseau nécessaire: 512 / 256 = 2
+- Il faut 2 Réseaux.
+- La dernière IP sera donc 192.168.97.254
+- L'adresse de Broadcast sera 192.168.97.255
+```
 
 | Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
 | ------------------ | --------------- | -------------------- | -------------------- | --------------------- | --------------------- |
@@ -162,7 +170,11 @@ On commence par la première plage IP : 192.168.96.0 .
 | Broadcast          | 192.168.97.255  | 1 1 1 1 1 1 1 1      | 1 1 1 1 1 1 1 1      |  0 1 1 0 0 0 0 1      | 1 1 1 1 1 1 1 1       |
 
 
-Vendeur: 120 Postes (On consommera que la moitié du réseau)
+Vendeur: 120 Postes
+```
+Bits hôte: 2^7 = 128 IP - 2 = 126 Hôtes
+Broadcast = 128 - IP réseau = 127
+```
 
 Le broadcast sera donc (255 / 2) - 1 = 127
 
