@@ -151,6 +151,8 @@ Nous avons 19 Bits pour le réseau. (CIDR)
 
 Technicien: 300 Postes (2 Réseaux = 512 IP)
 
+On commence par la première plage IP : 192.168.96.0 .
+
 | Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
 | ------------------ | --------------- | -------------------- | -------------------- | --------------------- | --------------------- |
 | Adresse IP (Début) | 192.168.96.0    | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 0 0 0 0 0      | 0 0 0 0 0 0 0 0       |
