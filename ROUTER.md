@@ -1,0 +1,4 @@
+#### Mode privilège
+```bash
+enable
+```
