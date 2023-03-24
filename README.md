@@ -87,3 +87,36 @@ Pour le broadcast on prendre le multiple suivant soit 2 x 16 = 32
 A ce chiffre on soustrait 1 soit 32 - 1 ) 31
 L'adresse de broadcast est 172.25.31.0
 ```
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+#### C. Exercice 
+#### I. CIDR + Utilisateur
+```
+192.168.100.0 / 19
+Technicien: 300
+Vendeur: 120
+On consommera 2 réseaux entier soit +1 au réseau
+```
+#### II. Convertir en Binaire
+| Réseau       | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| ------------ | --- | -- | -- | -- | - | - | - | - |
+| 192          | 1   | 1  | 0  | 0  | 0 | 0 | 0 | 0 |
+| 168          | 1   | 0  | 1  | 0  | 1 | 0 | 0 | 0 |
+| 100          | 0   | 1  | 1  | 0  | 0 | 1 | 0 | 0 |
+| 0            | 0   | 0  | 0  | 0  | 0 | 0 | 0 | 0 |
+| 255          | 1   | 1  | 1  | 1  | 1 | 1 | 1 | 1 |
+
+#### III. La règle Xor (1 Et 1 = 1)
+| Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
+| ------------------ | --------------- | -------------------- | -------------------- | --------------------- | --------------------- |
+| Adresse IP         | 192.168.100.0   | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 0 0 1 0 0      | 0 0 0 0 0 0 0 0       |
+| Masque de S/R      | 255.255.224.0   | 1 1 1 1 1 1 1 1      | 1 1 1 1 1 1 1 1      |  1 1 1 0 0 0 0 0      | 0 0 0 0 0 0 0 0       |
+| Adresse Réseau     | 192.168.96.0    | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 0 0 0 0 0      | 0 0 0 0 0 0 0 0       |
+| Broadcast (512 IP) | 192.168.97.255  | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      |  0 1 1 1 0 0 0 1      | 1 1 1 1 1 1 1 1       |
+
+#### IV. Calculer le nombre de machine
+Hôte = 32 Bits - 19 Bits réseau = 13 Bits
+2<sup>13</sup> - 2 = 8190 IP Disponibles !
+
+
