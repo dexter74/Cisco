@@ -47,6 +47,7 @@
 | 255          | 1   | 1  | 1  | 1  | 1 | 1 | 1 | 1 |
 
 #### III. La règle Xor (1 Et 1 = 1)
+
 | Description    | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
 | -------------- | --------------- | -------------------- | -------------------- | --------------------- | --------------------- |
 | Adresse IP     | 192.168.56.128  | 1 1 0 0 0 0 0 0      | 1 0 1 0 1 0 0 0      | 0 0 1 1 1 0 0 0       | 1 0 0 0 0 0 0 0       |
@@ -112,6 +113,7 @@ Vendeur: 120
 #### III. La règle Xor (1 Et 1 = 1)
 
 Pour le Broadcast on passe la partie hôte à 1.
+
 Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127 
 
 | Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
