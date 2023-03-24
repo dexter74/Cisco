@@ -1,4 +1,11 @@
 #### Mode privilège
-```bash
+```
 enable
 ```
+
+#### Protéger le routeur
+```
+enable secret admin
+```
+
+
