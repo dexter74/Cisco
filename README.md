@@ -97,6 +97,7 @@ L'adresse de broadcast est 172.25.31.0
 Technicien: 300
 Vendeur: 120
 ```
+
 #### II. Convertir en Binaire
 | Réseau       | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | ------------ | --- | -- | -- | -- | - | - | - | - |
@@ -105,6 +106,8 @@ Vendeur: 120
 | 100          | 0   | 1  | 1  | 0  | 0 | 1 | 0 | 0 |
 | 0            | 0   | 0  | 0  | 0  | 0 | 0 | 0 | 0 |
 | 255          | 1   | 1  | 1  | 1  | 1 | 1 | 1 | 1 |
+
+
 
 #### III. La règle Xor (1 Et 1 = 1)
 | Description        | Adresse IP      | 1<sup>er</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>ème</sup> Octet | 4<sup>ème</sup> Octet |
@@ -118,6 +121,7 @@ Pour le Broadcast on passe la partie hôte à 1.
 Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127 
 
 
+
 #### IV. Calculer le nombre de machine
 | 8 Octets | Réseau  | Hôte    |
 | -------- | ------- | ------- |
@@ -129,6 +133,9 @@ Le calcul est le suivant: 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127
 La puissance de 2 pour 13 bits: (2^13)-2 = 8190 Hôtes
 ```
 
+
+
+
 #### V. Calculer les sous réseaux
 | Nom de l'équipe | IP nécessaire |
 | --------------- | ------------- |
@@ -136,6 +143,7 @@ La puissance de 2 pour 13 bits: (2^13)-2 = 8190 Hôtes
 | Vendeur         | 120           |
 
 La puissance (2<sup>9</sup>)-2 = 510 Hôtes pour les Techniciens
+
 La puissance (2<sup>7</sup>)-2 = 126 Hôtes pour les Vendeurs
 
 
