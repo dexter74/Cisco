@@ -72,7 +72,5 @@
 ```
 On prend le dernier Octet côté réseau soit 30  (172.25.30.XX)
 On prend le dernier Octet côté Hôte   soit 254 (255.255.254.0)
-
 On Soustrait: 256 - Octet hôte => 256 - 254 = 2
-
 ```
