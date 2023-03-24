@@ -72,5 +72,18 @@
 ```
 On prend le dernier Octet côté réseau soit 30  (172.25.30.XX)
 On prend le dernier Octet côté Hôte   soit 254 (255.255.254.0)
+```
+
+```
 On Soustrait: 256 - Octet hôte => 256 - 254 = 2
+On multiple le résulat jusqu'à arrivé à la valeur de l'octet du réseau au plus proche(30)
+2 x 15 = 30
+Le multiple de 2 le plus de 30 et 30 car 2 x 15 = 30.
+Le Net ID est 172.25.30.0
+```
+
+```
+Pour le broadcast on prendre le multiple suivant soit 2 x 16 = 32
+A ce chiffre on soustrait 1 soit 32 - 1 ) 31
+L'adresse de broadcast est 172.25.31.0
 ```
