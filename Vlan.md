@@ -241,6 +241,6 @@ ping 192.168.10.130
 
 
 #### D.Vérification
-``
+```
 do show ip interface brief
 ```
