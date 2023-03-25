@@ -115,6 +115,8 @@ do show ip interface brief
 ### Afficher la configuration vlan
 ```
 do show vlan
+show vlan id 10
+show vlan id 20
 ```
 
 
