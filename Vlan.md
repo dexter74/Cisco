@@ -73,43 +73,62 @@ Laptop0 :
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## E. Configuration du Switch0
+#### I. Mode configuration
 ```
 enable
 configure terminal
+```
 
+#### II. Création des VLAN (10, 20 et 99)
+```
 no vlan 10
 vlan 10
 name Utilisateur
-exit
 
 no vlan 20
 vlan 20
 name Invite
-exit
 
 no vlan 99
 vlan 99
 name Administrateur
 exit
+```
 
-interface range FastEthernet 0/1 - 2
-switchport mode trunk
-exit
+#### III. Attribution des VLANS pour les Ports Physique
+```
 interface range FastEthernet 0/3 - 4
 switchport mode access
 switchport access vlan 10
 no shutdown
 exit
+```
+
+```
 interface range FastEthernet 0/5 - 6
 switchport mode access
 switchport access vlan 20
 no shutdown
 exit
+```
+
+#### IV. Trunk
+Le trunk permet le passage des Vlans entre équipements.
+```
+interface range FastEthernet 0/1 - 2
+switchport mode trunk
+exit
+```
+#### V. Configuration IP Virtuelle pour le Switch
+```
 interface vlan 99
 ip address 192.168.1.100 255.255.255.0
 no shutdown
 exit
+```
 
+### VI. Activation de la diffusion de configuration (VTP)
+```
 vtp domain Switch0
 vtp mode server
 vtp version 2
