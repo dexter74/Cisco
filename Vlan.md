@@ -133,23 +133,16 @@ end
 write
 ```
 
-
-
 <br />
-
-
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
-#### I. Mode configuration
+#### I. Création des VLAN (10, 20 et 99)
 ```
 enable
 configure terminal
 hostname Switch1
-```
 
-#### II. Création des VLAN (10, 20 et 99)
-```
 no vlan 10
 vlan 10
 name Utilisateur
@@ -181,15 +174,8 @@ no shutdown
 exit
 ```
 
-
 #### IV. Trunk
 Permettre le passage des Vlans entre équipements. (Ex: Switch, Routeurs)
-Les Trunks autorisés sont:
-```
-- Routeur - Switch0
-- Switch0 - Switch1
-```
-
 ```
 interface range FastEthernet 0/1 - 2
 switchport mode trunk
