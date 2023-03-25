@@ -89,6 +89,11 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 enable
 ```
 
+### Afficher la configuration
+```
+show running-config
+```
+
 #### Configuration Global
 ```
 configure terminal
@@ -104,10 +109,6 @@ enable secret admin
 hostname Switch0
 ```
 
-### Afficher la configuration
-```
-show running-config
-```
 
 ### Définir une Bannière
 ```
@@ -115,8 +116,6 @@ banner login %
 Enter TEXT message. End with the character '%'.
 Vous tentez d’entrer sur mon $(hostname) %
 ```
-
-
 
 
 # Sélectionner Interface
