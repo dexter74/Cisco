@@ -154,6 +154,11 @@ no shutdown
 ```
 <br />
 
+### Sauvegarder la configuration running vers la startup
+```
+copy running-config startup-config
+```
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
