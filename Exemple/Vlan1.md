@@ -10,11 +10,15 @@
 ```
 enable
 configure terminal
+
 vlan 10
 name Vlan_10
+
 vlan 20
 name Vlan_20
+
 vlan 99
 name Admin
+
 exit
 ```
