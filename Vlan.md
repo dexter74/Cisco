@@ -134,7 +134,6 @@ l
 
 ### Sélectionner Interface
 ```
-interface FastEthernet 0
 interface FastEthernet 0/1
 interface FastEthernet 0/2
 interface FastEthernet 0/3
