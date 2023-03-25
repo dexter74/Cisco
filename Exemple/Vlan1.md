@@ -145,5 +145,4 @@ encapsulation dot1Q 20
 ip address 192.168.20.254 255.255.255.0 
 no shutdown
 exit
-
 ```
