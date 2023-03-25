@@ -3,7 +3,7 @@
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Présentation du Réseau
+## A. Présentation du Réseau
 ```
 CIDR par défaut: 192.168.1.0/24
 ```
@@ -24,7 +24,7 @@ L'adresse CIDR est 192.168.1.0/26 car on à consommée 2 Bits.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Configuration de Packet Tracer
+## B. Configuration de Packet Tracer
 #### Always show label
 ```
 Aller dans Options > Préférences
@@ -34,7 +34,7 @@ Always show Port labels in Logical Workspace
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Ajout du Matériel
+## C. Ajout du Matériel
 ```
 Switch0 : 2950T
 Switch1 : 2950T
@@ -50,7 +50,7 @@ PC20-3  : Vlan 10
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Relier le matériel
+## D. Relier le matériel
 ```
 #Switch0-Router0 
 Switch0 (Fa 0/1) - Switch1 (Fa 0/1)
@@ -82,7 +82,7 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Configuration du Switch0
+## E. Configuration du Switch0
 
 #### Raccourcis
 ```
@@ -173,9 +173,24 @@ switchport access vlan 20
 exit
 ```
 
+#### Faire passer plusieurs VLAN sur le même Câble
+Le trunk permet de faire passer plusieurs VLAN sur le même Câble
+```
+interface FastEthernet 0/1
+switchport mode trunk
+exit
+```
+
+### Faire passer les VLAN sur ce Switch
+```
+interface FastEthernet 0/1
+switchport trunk allow vlan 10-20
+exit
+```
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## X. Configuration du Switch1
+## F. Configuration du Switch1
 #### Mode privilège
 ```
 enable
