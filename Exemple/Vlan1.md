@@ -4,7 +4,7 @@
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
-### Switch 1:
+### Switch 2
 
 #### A. Création des VLANS 
 ```
@@ -28,7 +28,7 @@ exit
 ```
 interface FastEthernet 0/1
 switchport mode trunk
-switchport trunk allowed vlan 20,30,99
+switchport trunk allowed vlan 10,20,99
 switchport trunk native vlan 99
 no shutdown
 exit
@@ -37,12 +37,12 @@ exit
 ##### II . Attribution d'interface au VLAN
 ```
 interface FastEthernet 0/10
-switchport access vlan 20 
+switchport access vlan 10
 no shutdown
 exit
 
 interface FastEthernet 0/11
-switchport access vlan 30 
+switchport access vlan 20
 no shutdown
 exit
 ```
