@@ -152,8 +152,13 @@ no shutdown
 ```
 <br />
 
-### Sauvegarder la configuration running vers la startup
+### Sauvegarder la configuration de travaille dans le démarrage
 ```
+write memory
+```
+
+#### Fusion de la configuration de Travaille et démarrage
+``` 
 copy running-config startup-config
 ```
 
