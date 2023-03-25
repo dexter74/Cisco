@@ -102,15 +102,11 @@ Laptop0 : 192.168.10.190 | 192.168.10.129
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## E. Configuration du Router
-### I. Configuration de base
 ```
 enable
 configure terminal
 hostname Router
-```
 
-### II. Création des Interfaces Virtuelles
-```
 interface FastEthernet 0/0.10
 encapsulation dot1q 10
 ip address 192.168.10.1 255.255.255.192
@@ -141,7 +137,6 @@ do write
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
-#### I. Création des VLAN (10, 20 et 99)
 ```
 enable
 configure terminal
@@ -159,43 +154,28 @@ no vlan 99
 vlan 99
 name Administrateur
 exit
-```
 
-#### III. Attribution des VLANS à des interfaces Physiques (Ports)
-```
 interface range FastEthernet 0/3 - 4
 switchport mode access
 switchport access vlan 10
 no shutdown
 exit
-```
 
-```
 interface range FastEthernet 0/5 - 6
 switchport mode access
 switchport access vlan 20
 no shutdown
 exit
-```
 
-#### IV. Trunk
-Permettre le passage des Vlans entre équipements. (Ex: Switch, Routeurs)
-```
 interface range FastEthernet 0/1 - 2
 switchport mode trunk
 exit
-```
 
-#### V. Configuration IP Virtuelle pour le Switch
-```
 interface vlan 99
 ip address 192.168.1.130 255.255.255.192
 no shutdown
 exit
-```
 
-### VI. Activation de la diffusion de configuration (VTP)
-```
 vtp domain Switch0
 vtp mode server
 vtp version 2
@@ -214,32 +194,23 @@ switchport mode access
 switchport access vlan 10
 no shutdown
 exit
-```
 
-```
 interface range FastEthernet 0/3
 switchport mode access
 switchport access vlan 20
 no shutdown
 exit
-```
 
-```
 interface range FastEthernet 0/4
 switchport mode access
 switchport access vlan 20
 no shutdown
 exit
-```
 
-#### II. Trunk
-```
 interface range FastEthernet 0/1
 switchport mode trunk
 exit
-```
-#### V. Configuration IP Virtuelle pour le Switch
-```
+
 interface vlan 99
 ip address 192.168.1.131 255.255.255.192
 no shutdown
@@ -247,7 +218,3 @@ exit
 ```
 
 <br />
-
-
-
-
