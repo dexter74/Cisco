@@ -16,8 +16,8 @@ Always show Port labels in Logical Workspace
 ## C. Ajout du Matériel
 ```
 Router0 : 2811
-Switch0 : 2950T
 Switch1 : 2950T
+Switch2 : 2950T
 
 PC10-1  : VLAN 10
 PC10-2  : VLAN 10
@@ -35,22 +35,18 @@ Laptop0: VLAN 99
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## D. Relier le matériel
 ```
-#Switch0-Router0 
-Switch0 (Fa 0/1) - Switch1 (Fa 0/1)
-Router0 (Fa 0/0) - Switch0 (Fa 0/2)
-
-#Switch0
-PC10-1  (Fa 0/0) - Switch0 (Fa 0/3)
-PC10-2  (Fa 0/0) - Switch0 (Fa 0/4)
-
-PC20-1  (Fa 0/0) - Switch0 (Fa 0/5)
-PC20-2  (Fa 0/0) - Switch0 (Fa 0/6)
-
-
 #Switch 1
-PC10-3  (Fa 0/0) - Switch1 (Fa 0/2)
-PC20-3  (Fa 0/0) - Switch1 (Fa 0/3)
-Laptop0 (Fa 0)   - Switch1 (Fa 0/4) 
+Switch2 (Fa 0/1) - Switch1 (Fa 0/1)
+Router  (Fa 0/0) - Switch1 (Fa 0/2)
+PC10-1  (Fa 0/0) - Switch1 (Fa 0/3)
+PC10-2  (Fa 0/0) - Switch1 (Fa 0/4)
+PC20-1  (Fa 0/0) - Switch1 (Fa 0/5)
+PC20-2  (Fa 0/0) - Switch1 (Fa 0/6)
+
+#Switch 2
+PC10-3  (Fa 0/0) - Switch2 (Fa 0/2)
+PC20-3  (Fa 0/0) - Switch2 (Fa 0/3)
+Laptop0 (Fa 0)   - Switch2 (Fa 0/4) 
 ```
 
 <br />
@@ -72,11 +68,24 @@ Laptop0 :
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## E. Configuration du Switch0
+## E. Configuration du Router
+```
+enable
+configure terminal
+hostname Router
+```
+
+<br />
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+## F. Configuration du Switch1
 #### I. Mode configuration
 ```
 enable
 configure terminal
+hostname Switch1
 ```
 
 #### II. Création des VLAN (10, 20 et 99)
@@ -95,7 +104,7 @@ name Administrateur
 exit
 ```
 
-#### III. Attribution des VLANS pour les Ports Physique
+#### III. Attribution des VLANS à des interfaces Physiques (Ports)
 ```
 interface range FastEthernet 0/3 - 4
 switchport mode access
@@ -112,13 +121,21 @@ no shutdown
 exit
 ```
 
+
 #### IV. Trunk
-Le trunk permet le passage des Vlans entre équipements.
+Permettre le passage des Vlans entre équipements. (Ex: Switch, Routeurs)
+Les Trunks autorisés sont:
+```
+- Routeur - Switch0
+- Switch0 - Switch1
+```
+
 ```
 interface range FastEthernet 0/1 - 2
 switchport mode trunk
 exit
 ```
+
 #### V. Configuration IP Virtuelle pour le Switch
 ```
 interface vlan 99
@@ -136,17 +153,13 @@ vtp version 2
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## F. Configuration du Switch1
+## X. Configuration du Switch2
 
 <br />
 
----------------------------------------------------------------------------------------------------------------------------------------------------
-## G. Configuration du Router0
-
-<br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## A. Présentation du Réseau
+## X. Présentation du Réseau
 
 ```
 CIDR par défaut: 192.168.1.0/24
