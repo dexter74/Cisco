@@ -52,16 +52,19 @@ PC20-3  : Vlan 10
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Relier le matériel
 ```
+#Switch0-Router0 
 Switch0 (Fa 0/1) - Switch1 (Fa 0/1)
 Router0 (Fa 0/0) - Switch0 (Fa 0/2)
+
+#Switch0
 PC10-1  (Fa 0/0) - Switch0 (Fa 0/3)
 PC10-2  (Fa 0/0) - Switch0 (Fa 0/4)
 PC20-1  (Fa 0/0) - Switch0 (Fa 0/5)
 PC20-2  (Fa 0/0) - Switch0 (Fa 0/6)
 
-PC10-3 (Fa 0/0) - Switch1 (Fa 0/2)
-PC20-3 (Fa 0/0) - Switch1 (Fa 0/3)
-
+#Switch 1
+PC10-3  (Fa 0/0) - Switch1 (Fa 0/2)
+PC20-3  (Fa 0/0) - Switch1 (Fa 0/3)
 ```
 <br />
 
