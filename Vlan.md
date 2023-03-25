@@ -199,7 +199,7 @@ exit
 #### V. Configuration IP Virtuelle pour le Switch
 ```
 interface vlan 99
-ip address 192.168.1.100 255.255.255.0
+ip address 192.168.1.130 255.255.255.192
 no shutdown
 exit
 ```
