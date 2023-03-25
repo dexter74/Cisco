@@ -101,6 +101,11 @@ enable
 show ip interface brief
 ```
 
+### Afficher la configuration de démarrage
+```
+show startup-config
+```
+
 ### Afficher la configuration
 ```
 show running-config
