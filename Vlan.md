@@ -128,7 +128,7 @@ Vous tentez d’entrer sur mon $(hostname) %
 l
 ```
 
-# Sélectionner Interface
+### Sélectionner Interface
 ```
 interface FastEthernet 0
 interface FastEthernet 0/1
@@ -139,7 +139,14 @@ interface FastEthernet 0/5
 interface FastEthernet 0/6
 ```
 
-
+### Configuration de l'adresse IP
+```
+ip address 192.168.1.254 255.255.255.0
+```
+### Activer une Interface
+```
+no shutdown
+```
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
