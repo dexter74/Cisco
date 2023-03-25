@@ -22,3 +22,27 @@ name Admin
 
 exit
 ```
+
+#### B. Configuration de l'attributions des interfaces aux VLANS
+##### I. Liaison entre Switch
+```
+interface FastEthernet 0/1
+switchport mode trunk
+switchport trunk allowed vlan 20,30,99
+switchport trunk native vlan 99
+no shutdown
+exit
+```
+
+##### II . Attribution d'interface au VLAN
+```
+interface FastEthernet 0/10
+switchport access vlan 20 
+no shutdown
+exit
+
+interface FastEthernet 0/11
+switchport access vlan 30 
+no shutdown
+exit
+```
