@@ -12,6 +12,64 @@ Vlan 20: 192.168.20.0/24
 
 <br />
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+### Switch 1
+
+#### A. Création des VLANS 
+```
+enable
+configure terminal
+
+vlan 10
+name Vlan_10
+
+vlan 20
+name Vlan_20
+
+vlan 99
+name Admin
+
+exit
+```
+
+
+#### B. Configuration de l'attributions des interfaces aux VLANS
+##### I. Liaison entre Switch
+```
+interface FastEthernet 0/1
+switchport mode trunk
+switchport trunk allowed vlan 10,20,99
+switchport trunk native vlan 99
+no shutdown
+exit
+
+interface FastEthernet 0/24
+switchport mode trunk
+switchport trunk allowed vlan 10,20,99
+switchport trunk native vlan 99
+no shutdown
+exit
+
+```
+
+##### II . Attribution d'interface au VLAN
+```
+interface FastEthernet 0/10
+switchport access vlan 10
+no shutdown
+exit
+
+interface FastEthernet 0/2
+switchport access vlan 20
+no shutdown
+exit
+```
+
+
+
+<br />
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ### Switch 2
 
