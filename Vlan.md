@@ -126,8 +126,11 @@ encapsulation dot1q 99
 ip address 192.168.10.129 255.255.255.192
 no shutdown
 exit
+```
 
-interface FastEthernet  0/0
+#### Problème
+```
+interface FastEthernet 0/0
 ip address 192.168.1.1 255.255.255.0
 no shutdown
 exit
