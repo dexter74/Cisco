@@ -270,16 +270,17 @@ exit
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## G. L'administration des VLAN
 
-### Configurer les Vlans sur le switch0
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-### Configuration de l'adresse IP
+### Configurer les Vlans sur le switch1
 ```
-ip address 192.168.1.254 255.255.255.0
+no vlan 99
+vlan 99
+name Administration
+exit
+interface FastEthernet 0/4
+switchport access vlan 99
+exit
 ```
+
 
 
 
