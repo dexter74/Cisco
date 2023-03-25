@@ -103,42 +103,6 @@ Laptop0 : 192.168.10.132 | 255.255.255.192 | 192.168.10.129
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## E. Configuration du Router
-```
-enable
-configure terminal
-hostname Router
-
-interface FastEthernet 0/0.10
-encapsulation dot1q 10
-ip address 192.168.10.1 255.255.255.192
-no shutdown
-exit
-
-interface FastEthernet 0/0.20
-encapsulation dot1q 20
-ip address 192.168.10.65 255.255.255.192
-no shutdown
-exit
-
-interface FastEthernet 0/0.99
-encapsulation dot1q 99
-ip address 192.168.10.129 255.255.255.192
-no shutdown
-exit
-```
-
-#### Problème
-```
-interface FastEthernet 0/0
-ip address 192.168.1.1 255.255.255.0
-no shutdown
-exit
-```
-
-<br />
-
----------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
 ```
 enable
@@ -223,6 +187,43 @@ exit
 ```
 
 <br />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+## X. Configuration du Router
+```
+enable
+configure terminal
+hostname Router
+
+interface FastEthernet 0/0.10
+encapsulation dot1q 10
+ip address 192.168.10.1 255.255.255.192
+no shutdown
+exit
+
+interface FastEthernet 0/0.20
+encapsulation dot1q 20
+ip address 192.168.10.65 255.255.255.192
+no shutdown
+exit
+
+interface FastEthernet 0/0.99
+encapsulation dot1q 99
+ip address 192.168.10.129 255.255.255.192
+no shutdown
+exit
+```
+
+#### Problème
+```
+interface FastEthernet 0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+```
+
+<br />
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Vérification de Bon fonctionnement depuis le poste Laptop0
