@@ -84,6 +84,13 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration du Switch0
 
+
+#### Raccourcis
+```
+CTRL+Z :Retour Privilège
+
+```
+
 #### Mode privilège
 ```
 enable
@@ -112,9 +119,9 @@ hostname Switch0
 
 ### Définir une Bannière
 ```
-banner login %
-Enter TEXT message. End with the character '%'.
+banner motd login %
 Vous tentez d’entrer sur mon $(hostname) %
+l
 ```
 
 
