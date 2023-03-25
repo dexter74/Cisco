@@ -231,3 +231,11 @@ do write
 ```
 ping 192.168.10.129
 ```
+#### B. Ping le Switch0
+```
+ping 192.168.10.130
+```
+#### C. Ping le Switch1
+```
+ping 192.168.10.130
+```
