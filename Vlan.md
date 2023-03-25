@@ -104,6 +104,10 @@ enable secret admin
 hostname Switch0
 ```
 
+### Afficher la configuration
+```
+show running-config
+```
 
 # Sélectionner Interface
 ```
