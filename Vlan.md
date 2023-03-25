@@ -212,7 +212,7 @@ switchport mode trunk
 exit
 
 interface vlan 99
-ip address 192.168.1.131 255.255.255.192
+ip address 192.168.10.131 255.255.255.192
 no shutdown
 exit
 ```
