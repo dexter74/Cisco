@@ -76,8 +76,6 @@ Laptop0 :
 ```
 enable
 configure terminal
-
-
 no vlan 10
 vlan 10
 name Utilisateur
@@ -87,7 +85,6 @@ switchport mode access
 switchport access vlan 10
 no shutdown
 exit
-
 no vlan 20
 vlan 20
 name Invite
@@ -97,7 +94,6 @@ switchport mode access
 switchport access vlan 20
 no shutdown
 exit
-
 no vlan 99
 vlan 99
 name Administrateur
