@@ -4,6 +4,15 @@
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+### Information sur le plan réseau
+```
+VLan 10: 192.168.10.0/24
+Vlan 20: 192.168.20.0/24
+```
+
+<br />
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
 ### Switch 2
 
 #### A. Création des VLANS 
@@ -45,4 +54,32 @@ interface FastEthernet 0/11
 switchport access vlan 20
 no shutdown
 exit
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+### Routeur
+
+##### Activer l'interface Physique
+```
+enable
+configure terminal
+interface FastEthernet 0/0
+no shutdown
+exit
+```
+
+#### Création des interfaces Virtuelles
+```
+interface FastEthernet 0/0.1
+encapsulation dot1Q 10
+ip address 192.168.10.254 255.255.255.0 
+no shutdown
+exit
+
+interface FastEthernet 0/0.2
+encapsulation dot1Q 20
+ip address 192.168.20.254 255.255.255.0 
+no shutdown
+exit
+
 ```
