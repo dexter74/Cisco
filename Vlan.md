@@ -86,7 +86,6 @@ Laptop0 (Fa 0)   - Switch2 (Fa 0/4)
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration des poste clients
 ```
-
 # Range: 1-62
 PC10-1  : 192.168.10.2  | 255.255.255.192 | 192.168.10.1
 PC10-2  : 192.168.10.3  | 255.255.255.192 | 192.168.10.1
@@ -132,8 +131,6 @@ interface FastEthernet  0/0
 ip address 192.168.1.1 255.255.255.0
 no shutdown
 exit
-
-do write
 ```
 
 <br />
@@ -182,9 +179,6 @@ exit
 vtp domain Switch0
 vtp mode server
 vtp version 2
-
-
-do write
 ```
 <br />
 
@@ -222,8 +216,6 @@ interface vlan 99
 ip address 192.168.10.131 255.255.255.192
 no shutdown
 exit
-
-do write
 ```
 
 <br />
