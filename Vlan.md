@@ -99,6 +99,12 @@ configure terminal
 enable secret admin
 ```
 
+### Définir un Nom
+```
+hostname Switch0
+```
+
+
 # Sélectionner Interface
 ```
 interface FastEthernet 0
