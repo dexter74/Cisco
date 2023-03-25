@@ -124,6 +124,8 @@ encapsulation dot1q 99
 ip address 192.168.0.129 255.255.255.192
 no shutdown
 exit
+
+end
 ```
 
 
