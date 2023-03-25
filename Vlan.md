@@ -89,15 +89,18 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 enable
 ```
 
+#### Configuration Global
+```
+configure terminal
+```
+
 #### Protéger le routeur
 ```
 enable secret admin
 ```
 
-#### Configuration Global
-```
-configure terminal
-```
+
+
 
 
 <br />
