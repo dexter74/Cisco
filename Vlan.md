@@ -264,23 +264,8 @@ exit
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## G. L'administration des VLAN
-### Configurer le VLan 99 sur le Switch1
-```
-enable
-configure terminal
-no vlan 99
-vlan 99
-name Administration
-exit
 
-interface FastEthernet 0/4
-switchport access vlan 99
-exit
-```
-
-
-
-
+### Configurer les Vlans sur le switch0
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
