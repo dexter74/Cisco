@@ -203,7 +203,7 @@ exit
 
 interface range FastEthernet 0/4
 switchport mode access
-switchport access vlan 20
+switchport access vlan 99
 no shutdown
 exit
 
