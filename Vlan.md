@@ -190,6 +190,7 @@ vtp version 2
 enable
 configure terminal
 hostname Switch2
+
 interface range FastEthernet 0/2
 switchport mode access
 switchport access vlan 10
