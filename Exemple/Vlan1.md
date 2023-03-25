@@ -56,7 +56,6 @@ switchport trunk allowed vlan 10,20,99
 switchport trunk native vlan 99
 no shutdown
 exit
-
 ```
 
 ##### II . Attribution d'interface au VLAN
@@ -71,7 +70,6 @@ switchport access vlan 20
 no shutdown
 exit
 ```
-
 
 
 <br />
