@@ -1,8 +1,12 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------
-<p align ='center'> <img src='https://user-images.githubusercontent.com/35907/227744660-e51df597-ba58-4fe8-ac26-cf169eacb185.png'> </p>
 
+<br />
 
-
+<p align ='center'>
+  <a href="https://www.it-connect.fr/mise-en-place-de-vlans-et-de-routage-inter-vlans/comment-page-3/#comment-224892">
+    <img src='https://user-images.githubusercontent.com/35907/227744660-e51df597-ba58-4fe8-ac26-cf169eacb185.png'>
+  </a>
+</p>
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ### Information sur le plan réseau
 ```
