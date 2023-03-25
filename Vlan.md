@@ -19,15 +19,15 @@ Router0 : 2811
 Switch0 : 2950T
 Switch1 : 2950T
 
-PC10-1  : Vlan 10
-PC10-2  : Vlan 10
-PC10-3  : Vlan 20
+PC10-1  : VLAN 10
+PC10-2  : VLAN 10
+PC10-3  : VLAN 20
 
-PC20-1  : Vlan 20
-PC20-2  : Vlan 20
-PC20-3  : Vlan 10
+PC20-1  : VLAN 20
+PC20-2  : VLAN 20
+PC20-3  : VLAN 10
 
-Laptop0: Vlan 99
+Laptop0: VLAN 99
 ```
 
 <br />
@@ -73,8 +73,45 @@ Laptop0 :
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## E. Configuration du Switch0
+```
+enable
+configure terminal
 
+
+no vlan 10
+vlan 10
+name Utilisateur
+exit
+interface range FastEthernet 0/3 - 4
+switchport mode access
+switchport access vlan 10
+no shutdown
+exit
+
+no vlan 20
+vlan 20
+name Invite
+exit
+interface range FastEthernet 0/5 - 6
+switchport mode access
+switchport access vlan 20
+no shutdown
+exit
+
+no vlan 99
+vlan 99
+name Administrateur
+interface vlan 99
+ip address 192.168.1.100 255.255.255.0
+no shutdown
+exit
+```
 <br />
+
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
@@ -84,22 +121,7 @@ Laptop0 :
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## G. Configuration du Router0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## A. Présentation du Réseau
