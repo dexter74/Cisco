@@ -125,7 +125,7 @@ ip address 192.168.1.129 255.255.255.192
 no shutdown
 exit
 
-interface FastEthernet 
+interface FastEthernet  0/0
 no shutdown
 exit
 
