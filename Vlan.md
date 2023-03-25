@@ -262,7 +262,7 @@ exit
 ### Faire passer les VLAN sur ce Switch
 ```
 interface FastEthernet 0/1
-switchport trunk allow vlan 10-20
+switchport trunk allow vlan 10-20-99
 exit
 ```
 
@@ -277,6 +277,16 @@ no vlan 99
 vlan 99
 name Administration
 exit
+
+interface FastEthernet 0/1
+switchport access vlan 99
+exit
+
+
+interface vlan 99
+ip address 192.168.99.3 255.255.255.0
+no shutdown
+exit
 ```
 
 ### Création du Vlan 99 sur le switch 1
@@ -285,6 +295,7 @@ no vlan 99
 vlan 99
 name Administration
 exit
+
 interface FastEthernet 0/4
 switchport access vlan 99
 exit
