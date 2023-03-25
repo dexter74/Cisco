@@ -239,6 +239,29 @@ switchport access vlan 20
 exit
 ```
 
+#### Faire passer plusieurs VLAN sur le même Câble
+Le trunk permet de faire passer plusieurs VLAN sur le même Câble
+```
+interface FastEthernet 0/1
+switchport mode trunk
+exit
+```
+
+### Faire passer les VLAN sur ce Switch
+```
+interface FastEthernet 0/1
+switchport trunk allow vlan 10-20
+exit
+```
+
+
+
+
+
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
