@@ -88,7 +88,6 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 #### Raccourcis
 ```
 CTRL+Z :Retour Privilège
-
 ```
 
 #### Mode privilège
