@@ -31,6 +31,12 @@ Aller dans Options > Préférences
 Always show Port labels in Logical Workspace
 ```
 
+
+#### Raccourcis
+```
+CTRL+Z :Retour Privilège
+```
+
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -84,244 +90,23 @@ PC10-3  : 192.168.1.4 | 192.168.1.1
 PC10-1  : 192.168.1.65 | 192.168.1.1
 PC10-2  : 192.168.1.66 | 192.168.1.1
 PC10-3  : 192.168.1.67 | 192.168.1.1
+
 Laptop0 : 192.168.99.1 | 192.168.1.1
 ```
 
 <br />
 
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## E. Configuration du Switch0
-
-#### Raccourcis
-```
-CTRL+Z :Retour Privilège
-```
-
-#### Mode privilège
-```
-enable
-```
-
-#### Configuration Global
-```
-configure terminal
-```
-
-#### Protéger le routeur
-```
-enable secret admin
-```
-
-### Définir un Nom
-```
-hostname Switch0
-```
-
-### Définir une Bannière
-```
-banner motd login %
-Vous tentez d’entrer sur mon $(hostname) %
-l
-```
-
-### Supprimer Vlan X
-```
-no vlan 10
-no vlan 20
-```
-
-### Création des Vlan 10 et 20
-```
-vlan 10
-name Vlan10
-exit
-
-vlan 20
-name Vlan20
-exit
-```
-
-### Relier les interfaces au Vlans (Switch - PC)
-```
-interface FastEthernet 0/3
-switchport access vlan 10
-exit
-
-interface FastEthernet 0/4
-switchport access vlan 10
-exit
-
-
-interface FastEthernet 0/5
-switchport access vlan 20
-exit
-
-interface FastEthernet 0/6
-switchport access vlan 20
-exit
-```
-
-#### Faire passer plusieurs VLAN sur le même Câble
-Le trunk permet de faire passer plusieurs VLAN sur le même Câble
-```
-interface FastEthernet 0/1
-switchport mode trunk
-exit
-```
-
-### Faire passer les VLAN sur ce Switch
-```
-interface FastEthernet 0/1
-switchport trunk allow vlan 10-20
-exit
-```
 
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
-#### Mode privilège
-```
-enable
-```
-#### Configuration Global
-```
-configure terminal
-```
-#### Protéger le routeur
-```
-enable secret admin
-```
-### Définir un Nom
-```
-hostname Switch1
-```
-### Définir une Bannière
-```
-banner motd login %
-Vous tentez d’entrer sur mon $(hostname) %
-l
-```
-### Supprimer Vlan X
-```
-no vlan 10
-no vlan 20
-```
-### Création des Vlan 10 et 20
-```
-vlan 10
-name Vlan10
-exit
-
-vlan 20
-name Vlan20
-exit
-```
-### Relier les interfaces au Vlans (Switch - PC)
-```
-interface FastEthernet 0/2
-switchport access vlan 10
-exit
-
-interface FastEthernet 0/3
-switchport access vlan 20
-exit
-```
-
-#### Faire passer plusieurs VLAN sur le même Câble
-Le trunk permet de faire passer plusieurs VLAN sur le même Câble
-```
-interface FastEthernet 0/1
-switchport mode trunk
-exit
-```
-
-### Faire passer les VLAN sur ce Switch
-```
-interface FastEthernet 0/1
-switchport trunk allow vlan 10-20-99
-exit
-```
-
-
-### Afficher la configuration A chaud et au démarrage
-```
-do show startup-config
-do show running-config
-```
-
-### Afficher le résumé des interfaces
-```
-do show ip interface brief
-```
-
-### Afficher la configuration vlan
-```
-do show vlan
-do show vlan id 10
-do show vlan id 20
-```
-
-### Afficher les ports autorisé du trunk
-```
-do show interface trunk
-```
-
-
-
 
 <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-## G. L'administration des VLAN
-
-### Création du Vlan 99 sur le switch 0
-```
-no vlan 99
-vlan 99
-name Administration
-exit
-
-interface FastEthernet 0/1
-switchport access vlan 99
-exit
-
-
-interface vlan 99
-ip address 192.168.99.3 255.255.255.0
-no shutdown
-exit
-```
-
-### Création du Vlan 99 sur le switch 1
-```
-no vlan 99
-vlan 99
-name Administration
-exit
-
-interface FastEthernet 0/4
-switchport access vlan 99
-exit
-
-interface vlan 99
-ip address 192.168.99.2 255.255.255.0
-no shutdown
-exit
-
-do show interface vlan 99
-do show running-config
-```
-
-
-
-### Sauvegarder la configuration de travaille dans le démarrage
-```
-write memory
-```
-
-#### Fusion de la configuration de Travaille et démarrage
-``` 
-copy running-config startup-config
-```
-
+## G. Configuration du Router0
