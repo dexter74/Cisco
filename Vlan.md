@@ -270,7 +270,15 @@ exit
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## G. L'administration des VLAN
 
-### Configurer les Vlans sur le switch1
+### Création du Vlan 99 sur le switch 0
+```
+no vlan 99
+vlan 99
+name Administration
+exit
+```
+
+### Création du Vlan 99 sur le switch 1
 ```
 no vlan 99
 vlan 99
@@ -279,8 +287,15 @@ exit
 interface FastEthernet 0/4
 switchport access vlan 99
 exit
-```
 
+interface vlan 99
+ip address 192.168.99.2 255.255.255.0
+no shutdown
+exit
+
+do show interface vlan 99
+do show running-config
+```
 
 
 
