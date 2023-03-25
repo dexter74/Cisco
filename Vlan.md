@@ -220,7 +220,7 @@ switchport access vlan 10
 exit
 
 interface FastEthernet 0/3
-switchport access vlan 10
+switchport access vlan 20
 exit
 ```
 
