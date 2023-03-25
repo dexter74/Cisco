@@ -120,8 +120,13 @@ do show ip interface brief
 ### Afficher la configuration vlan
 ```
 do show vlan
-show vlan id 10
-show vlan id 20
+do show vlan id 10
+do show vlan id 20
+```
+
+### Afficher les ports autorisé du trunk
+```
+do show interface trunk
 ```
 
 #### Protéger le routeur
