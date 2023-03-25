@@ -125,6 +125,10 @@ ip address 192.168.1.129 255.255.255.192
 no shutdown
 exit
 
+interface FastEthernet 
+no shutdown
+exit
+
 end
 ```
 
