@@ -109,6 +109,16 @@ hostname Switch0
 show running-config
 ```
 
+### Définir une Bannière
+```
+banner login %
+Enter TEXT message. End with the character '%'.
+Vous tentez d’entrer sur mon $(hostname) %
+```
+
+
+
+
 # Sélectionner Interface
 ```
 interface FastEthernet 0
