@@ -200,7 +200,31 @@ vtp version 2
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration du Switch2
+#### I. Attribution des 
+Attribution des VLANS à des interfaces Physiques (Ports)
+```
+interface range FastEthernet 0/2
+switchport mode access
+switchport access vlan 10
+no shutdown
+exit
+```
 
+```
+interface range FastEthernet 0/3
+switchport mode access
+switchport access vlan 20
+no shutdown
+exit
+```
+
+```
+interface range FastEthernet 0/4
+switchport mode access
+switchport access vlan 20
+no shutdown
+exit
+```
 <br />
 
 
