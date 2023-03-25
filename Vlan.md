@@ -84,7 +84,6 @@ PC10-3: 192.168.1.67 | 192.168.1.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration du Switch0
 
-
 #### Raccourcis
 ```
 CTRL+Z :Retour Privilège
@@ -154,42 +153,84 @@ name Vlan20
 exit
 ```
 
-### Configration des interfaces (Attacher les ports au Vlan, mode access ?,  activation)
+### Relier les interfaces au Vlans (Switch - PC)
 ```
 interface FastEthernet 0/3
-switchport mode access
 switchport access vlan 10
-no shutdown
 exit
 
 interface FastEthernet 0/4
-switchport mode access
 switchport access vlan 10
-no shutdown
 exit
 
+
 interface FastEthernet 0/5
-switchport mode access
 switchport access vlan 20
 exit
 
 interface FastEthernet 0/6
-switchport mode access
 switchport access vlan 20
-no shutdown
-exit
-```
-
-### Le trunk (Switch0 - Switch1)
-Permet de faire communiquer plusieurs appareils (Switch) et leur vlan respectifs.
-```
-interface FastEthernet 0/1
-switchport mode trunk
-switchport trunk allow vlan 10-20
 exit
 ```
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+## X. Configuration du Switch1
+#### Mode privilège
+```
+enable
+```
+#### Configuration Global
+```
+configure terminal
+```
+#### Protéger le routeur
+```
+enable secret admin
+```
+### Définir un Nom
+```
+hostname Switch1
+```
+### Définir une Bannière
+```
+banner motd login %
+Vous tentez d’entrer sur mon $(hostname) %
+l
+```
+### Supprimer Vlan X
+```
+no vlan 10
+no vlan 20
+```
+### Création des Vlan 10 et 20
+```
+vlan 10
+name Vlan10
+exit
+
+vlan 20
+name Vlan20
+exit
+```
+### Relier les interfaces au Vlans (Switch - PC)
+```
+interface FastEthernet 0/2
+switchport access vlan 10
+exit
+
+interface FastEthernet 0/3
+switchport access vlan 10
+exit
+```
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Configuration de l'adresse IP
+```
+ip address 192.168.1.254 255.255.255.0
+```
 
 
 
@@ -202,13 +243,4 @@ write memory
 ``` 
 copy running-config startup-config
 ```
-
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-### Configuration de l'adresse IP
-```
-ip address 192.168.1.254 255.255.255.0
-```
-
 
