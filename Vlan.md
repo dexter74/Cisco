@@ -157,27 +157,49 @@ exit
 ```
 
 
-### Sélectionner l'interface et attacher les ports au vlan correspondants et activer l'interface
+### Configration des interfaces (Attacher les ports au Vlan, mode access ?,  activation)
 ```
 interface FastEthernet 0/3
+switchport mode access
 switchport access vlan 10
 no shutdown
 exit
 
 interface FastEthernet 0/4
+switchport mode access
 switchport access vlan 10
 no shutdown
 exit
 
 interface FastEthernet 0/5
+switchport mode access
 switchport access vlan 20
 exit
 
 interface FastEthernet 0/6
+switchport mode access
 switchport access vlan 20
 no shutdown
 exit
 ```
+
+### Le trunk
+Permet de faire communiquer plusieurs appareils (Switch) et leur vlan respectifs.
+```
+interface FastEthernet 0/3
+switchport trunk encapsulation dot1q
+switchport mode trunk
+
+interface FastEthernet 0/4
+interface FastEthernet 0/5
+interface FastEthernet 0/6
+```
+
+
+
+
+
+
 
 ### Sauvegarder la configuration de travaille dans le démarrage
 ```
