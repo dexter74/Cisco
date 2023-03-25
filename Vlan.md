@@ -179,8 +179,15 @@ exit
 vtp domain Switch0
 vtp mode server
 vtp version 2
+
+
+do write
 ```
 <br />
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration du Switch2
@@ -215,6 +222,8 @@ interface vlan 99
 ip address 192.168.10.131 255.255.255.192
 no shutdown
 exit
+
+do write
 ```
 
 <br />
