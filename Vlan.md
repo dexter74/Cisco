@@ -35,13 +35,17 @@ Laptop0: VLAN 99
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## D. Relier le matériel
 ```
-#Switch 1
+# Switch 2 - Switch 1
 Switch2 (Fa 0/1) - Switch1 (Fa 0/1)
+
+
+#Switch 1
 Router  (Fa 0/0) - Switch1 (Fa 0/2)
 PC10-1  (Fa 0/0) - Switch1 (Fa 0/3)
 PC10-2  (Fa 0/0) - Switch1 (Fa 0/4)
 PC20-1  (Fa 0/0) - Switch1 (Fa 0/5)
 PC20-2  (Fa 0/0) - Switch1 (Fa 0/6)
+
 
 #Switch 2
 PC10-3  (Fa 0/0) - Switch2 (Fa 0/2)
