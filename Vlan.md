@@ -99,8 +99,16 @@ configure terminal
 enable secret admin
 ```
 
-
-
+# Sélectionner Interface
+```
+interface FastEthernet 0
+interface FastEthernet 0/1
+interface FastEthernet 0/2
+interface FastEthernet 0/3
+interface FastEthernet 0/4
+interface FastEthernet 0/5
+interface FastEthernet 0/6
+```
 
 
 <br />
