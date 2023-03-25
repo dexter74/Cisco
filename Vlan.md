@@ -101,13 +101,17 @@ interface vlan 99
 ip address 192.168.1.100 255.255.255.0
 no shutdown
 exit
+
+
+interface range FastEthernet 0/1 - 2
+switchport mode trunk
+exit
+
+vtp domain Switch0
+vtp mode server
+vtp version 2
 ```
 <br />
-
-
-
-
-
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## F. Configuration du Switch1
