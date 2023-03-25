@@ -96,6 +96,11 @@ CTRL+Z :Retour Privilège
 enable
 ```
 
+### Afficher le résumé des interfaces
+```
+show ip interface brief
+```
+
 ### Afficher la configuration
 ```
 show running-config
@@ -116,14 +121,12 @@ enable secret admin
 hostname Switch0
 ```
 
-
 ### Définir une Bannière
 ```
 banner motd login %
 Vous tentez d’entrer sur mon $(hostname) %
 l
 ```
-
 
 # Sélectionner Interface
 ```
