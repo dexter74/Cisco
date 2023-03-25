@@ -200,9 +200,11 @@ vtp version 2
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## X. Configuration du Switch2
-#### I. Attribution des 
-Attribution des VLANS à des interfaces Physiques (Ports)
+#### I. Attribution des VLANS à des interfaces Physiques (Ports)
 ```
+enable
+configure terminal
+hostname Switch2
 interface range FastEthernet 0/2
 switchport mode access
 switchport access vlan 10
@@ -225,6 +227,21 @@ switchport access vlan 20
 no shutdown
 exit
 ```
+
+#### II. Trunk
+```
+interface range FastEthernet 0/1
+switchport mode trunk
+exit
+```
+#### V. Configuration IP Virtuelle pour le Switch
+```
+interface vlan 99
+ip address 192.168.1.131 255.255.255.192
+no shutdown
+exit
+```
+
 <br />
 
 
