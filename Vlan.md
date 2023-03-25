@@ -120,8 +120,6 @@ show vlan id 20
 ```
 
 
-
-
 #### Protéger le routeur
 ```
 enable secret admin
@@ -156,7 +154,6 @@ name Vlan20
 exit
 ```
 
-
 ### Configration des interfaces (Attacher les ports au Vlan, mode access ?,  activation)
 ```
 interface FastEthernet 0/3
@@ -183,19 +180,14 @@ no shutdown
 exit
 ```
 
-### Le trunk
+### Le trunk (Switch0 - Switch1)
 Permet de faire communiquer plusieurs appareils (Switch) et leur vlan respectifs.
 ```
-interface FastEthernet 0/3
-switchport trunk encapsulation dot1q
+interface FastEthernet 0/1
 switchport mode trunk
-
-interface FastEthernet 0/4
-interface FastEthernet 0/5
-interface FastEthernet 0/6
+switchport trunk allow vlan 10-20
+exit
 ```
-
-
 
 
 
