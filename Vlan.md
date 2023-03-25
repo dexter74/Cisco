@@ -147,21 +147,34 @@ no vlan 20
 ```
 vlan 10
 name Vlan10
+exit
 
 vlan 20
 name Vlan20
-```
-
-### Sélectionner Interface (Switch-Routeur)
-```
-interface FastEthernet 0/1
+exit
 ```
 
 
-
-### Activer une Interface
+### Sélectionner l'interface et attacher les ports au vlan correspondants et activer l'interface
 ```
+interface FastEthernet 0/3
+switchport access vlan 10
 no shutdown
+exit
+
+interface FastEthernet 0/4
+switchport access vlan 10
+no shutdown
+exit
+
+interface FastEthernet 0/5
+switchport access vlan 20
+exit
+
+interface FastEthernet 0/6
+switchport access vlan 20
+no shutdown
+exit
 ```
 
 ### Sauvegarder la configuration de travaille dans le démarrage
