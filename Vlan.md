@@ -95,25 +95,30 @@ CTRL+Z :Retour Privilège
 enable
 ```
 
-### Afficher le résumé des interfaces
-```
-show ip interface brief
-```
-
-### Afficher la configuration de démarrage
-```
-show startup-config
-```
-
-### Afficher la configuration
-```
-show running-config
-```
-
 #### Configuration Global
 ```
 configure terminal
 ```
+
+
+### Afficher la configuration A chaud et au démarrage
+```
+do show startup-config
+do show running-config
+```
+
+### Afficher le résumé des interfaces
+```
+do show ip interface brief
+```
+
+### Afficher la configuration vlan
+```
+do show vlan
+```
+
+
+
 
 #### Protéger le routeur
 ```
@@ -132,25 +137,32 @@ Vous tentez d’entrer sur mon $(hostname) %
 l
 ```
 
-### Sélectionner Interface
+### Supprimer Vlan X
 ```
-interface FastEthernet 0/1
-interface FastEthernet 0/2
-interface FastEthernet 0/3
-interface FastEthernet 0/4
-interface FastEthernet 0/5
-interface FastEthernet 0/6
+no vlan 10
+no vlan 20
 ```
 
-### Configuration de l'adresse IP
+### Création des Vlan 10 et 20
 ```
-ip address 192.168.1.254 255.255.255.0
+vlan 10
+name Vlan10
+
+vlan 20
+name Vlan20
 ```
+
+### Sélectionner Interface (Switch-Routeur)
+```
+interface FastEthernet 0/1
+```
+
+
+
 ### Activer une Interface
 ```
 no shutdown
 ```
-<br />
 
 ### Sauvegarder la configuration de travaille dans le démarrage
 ```
@@ -163,5 +175,11 @@ copy running-config startup-config
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Configuration de l'adresse IP
+```
+ip address 192.168.1.254 255.255.255.0
+```
 
 
