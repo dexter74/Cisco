@@ -107,29 +107,6 @@ enable
 configure terminal
 ```
 
-### Afficher la configuration A chaud et au démarrage
-```
-do show startup-config
-do show running-config
-```
-
-### Afficher le résumé des interfaces
-```
-do show ip interface brief
-```
-
-### Afficher la configuration vlan
-```
-do show vlan
-do show vlan id 10
-do show vlan id 20
-```
-
-### Afficher les ports autorisé du trunk
-```
-do show interface trunk
-```
-
 #### Protéger le routeur
 ```
 enable secret admin
@@ -265,6 +242,33 @@ interface FastEthernet 0/1
 switchport trunk allow vlan 10-20-99
 exit
 ```
+
+
+### Afficher la configuration A chaud et au démarrage
+```
+do show startup-config
+do show running-config
+```
+
+### Afficher le résumé des interfaces
+```
+do show ip interface brief
+```
+
+### Afficher la configuration vlan
+```
+do show vlan
+do show vlan id 10
+do show vlan id 20
+```
+
+### Afficher les ports autorisé du trunk
+```
+do show interface trunk
+```
+
+
+
 
 <br />
 
