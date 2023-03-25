@@ -76,35 +76,38 @@ Laptop0 :
 ```
 enable
 configure terminal
+
 no vlan 10
 vlan 10
 name Utilisateur
+exit
+
+no vlan 20
+vlan 20
+name Invite
+exit
+
+no vlan 99
+vlan 99
+name Administrateur
+exit
+
+interface range FastEthernet 0/1 - 2
+switchport mode trunk
 exit
 interface range FastEthernet 0/3 - 4
 switchport mode access
 switchport access vlan 10
 no shutdown
 exit
-no vlan 20
-vlan 20
-name Invite
-exit
 interface range FastEthernet 0/5 - 6
 switchport mode access
 switchport access vlan 20
 no shutdown
 exit
-no vlan 99
-vlan 99
-name Administrateur
 interface vlan 99
 ip address 192.168.1.100 255.255.255.0
 no shutdown
-exit
-
-
-interface range FastEthernet 0/1 - 2
-switchport mode trunk
 exit
 
 vtp domain Switch0
