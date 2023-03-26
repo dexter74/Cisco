@@ -192,17 +192,15 @@ Le broadcast sera donc (255 / 2) - 1 = 127
 
 Résumé de l'exercice:
 ```
-192.168.100.0 / 19
-Technicien: 300
-Vendeur: 120
-
 -----------------------------------------------------------------------------------
+192.168.100.0 / 19
 192.168.100.0 > 11000000.10101000.01100100.00000000
 255.255.224.0 > 11111111.11111111.11100000.00000000 /19
 192.168.96.0  > 11000000.10101000.01100000.00000000 Premier réseau de la plage
 
 -----------------------------------------------------------------------------------
-Technicien: 
+Technicien: 300
+
 Bit Hôte    : 2^9 = 512 IP - 2 = 510 Hôtes (1 bits consommé sur le 4ème octet)
 Bit Réseau  : 512 / 256 = 2 Réseaux nécessaire ( XXX.XXX.97.0 et XXX.XXX.98.0)
 
@@ -211,7 +209,7 @@ IP de début : 192.168.96.1
 IP de Fin   : 192.168.97.254 
 IP Broadcast: 192.168.97.255
 
-Vendeur:
+Vendeur: 120
 Bit Hôte    : 2^7= 128 IP - 2 = 126 Hôtes
 Bit Réseau  : 2^1 = 2 Réseaux
 Broadcast   : 128 - 1 Adresse réseau = 127
