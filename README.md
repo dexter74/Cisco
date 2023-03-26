@@ -209,7 +209,10 @@ IP de début : 192.168.96.1
 IP de Fin   : 192.168.97.254 
 IP Broadcast: 192.168.97.255
 
+
 Vendeur: 120
+Le réseau 192.168.97.0 est completèment utiliser. On prend le suivant 192.168.98.0.
+
 Bit Hôte    : 2^7= 128 IP - 2 = 126 Hôtes
 Bit Réseau  : 2^1 = 2 Réseaux
 Broadcast   : 128 - 1 Adresse réseau = 127
