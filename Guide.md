@@ -31,6 +31,23 @@ Network > Interfaces > Devices > Add device configuration
 
 [Advanced device options]
  - Send ICMP redirects
- - Force IGMP version
+ - Enable multicast support (IGMP)
 ```
 
+
+
+#### C. Création du VLAN1
+```
+Network > Interfaces > Devices > Add device configuration
+
+[General device options]
+Device type: Vlan (802.1q)
+Base device: lan1
+
+[Advanced device options]
+ - Ingress QoS mapping
+ - Egress QoS mapping
+ - Accept local
+ - Send ICMP redirects
+ - Enable multicast support (IGMP)
+```
