@@ -21,7 +21,7 @@ Network > Interfaces > Devices > Br-lan > Configure
 Bridge ports: Déselectionner les interfaces
 ```
 
-#### C. Création du LAN
+#### C. Création du Dispositifs LAN / VLAN
 ```
 Network > Interfaces > Devices > Add device configuration
 
@@ -32,12 +32,9 @@ Network > Interfaces > Devices > Add device configuration
 [Advanced device options]
  - Send ICMP redirects
  - Enable multicast support (IGMP)
-```
 
+-----------------------------------------------------------------------------------
 
-
-#### C. Création du VLAN1
-```
 Network > Interfaces > Devices > Add device configuration
 
 [General device options]
@@ -49,5 +46,12 @@ Base device: lan1
  - Egress QoS mapping
  - Accept local
  - Send ICMP redirects
- - Enable multicast support (IGMP)
+ - Enable multicast support (IGMP) 
+```
+
+
+#### D. Création des Interfaces
+```
+LAN
+Vlan1: vlan1.2
 ```
