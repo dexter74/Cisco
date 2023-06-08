@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-08T09:00:40.228Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="TBY98Rva0oVlYy1cmqn9" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-08T09:00:53.824Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="AGFGXDk2KYVlVzkCIfc1" version="21.3.7" type="github">
   <diagram name="Page-1" id="4TDF21b4QqdKw5dCP2nv">
     <mxGraphModel dx="954" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,9 +75,6 @@
         </mxCell>
         <mxCell id="YOxgOuzTjdagN2dg8XwQ-25" value="enp0s3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="653.5" y="377" width="70" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="QDoTIBrQtU127iy7HSUL-1" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/tunnel.svg;" vertex="1" parent="1">
-          <mxGeometry x="390" y="300" width="50" height="10" as="geometry" />
         </mxCell>
         <mxCell id="QDoTIBrQtU127iy7HSUL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QDoTIBrQtU127iy7HSUL-2" target="_CrG6K27j0G8giUHZbeT-12">
           <mxGeometry relative="1" as="geometry" />
