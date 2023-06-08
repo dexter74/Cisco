@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-08T08:55:00.599Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="U6VdPL5mNGKSU3fvPR_T" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-08T08:55:22.765Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="6-vD8bRu3DqbMaHcDRpb" version="21.3.7" type="github">
   <diagram name="Page-1" id="4TDF21b4QqdKw5dCP2nv">
     <mxGraphModel dx="954" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,8 +10,8 @@
         <mxCell id="_CrG6K27j0G8giUHZbeT-7" value="pfsense.site2.domain.local" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="597.5" y="109" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_CrG6K27j0G8giUHZbeT-8" value="10.0.2.54" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="221" y="126" width="70" height="30" as="geometry" />
+        <mxCell id="_CrG6K27j0G8giUHZbeT-8" value="em0&lt;br&gt;10.0.2.54" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="236" y="121" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_CrG6K27j0G8giUHZbeT-9" value="10.0.2.154" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="531" y="126" width="80" height="30" as="geometry" />
