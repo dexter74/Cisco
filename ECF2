@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-08T09:03:12.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="uwcPWkdyo935LO-SNJRb" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-08T09:06:33.474Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.57" etag="0JyI74bxX0Q4vMefftNf" version="21.3.7" type="github">
   <diagram name="Page-1" id="4TDF21b4QqdKw5dCP2nv">
     <mxGraphModel dx="954" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -82,14 +82,17 @@
         <mxCell id="QDoTIBrQtU127iy7HSUL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QDoTIBrQtU127iy7HSUL-2" target="_CrG6K27j0G8giUHZbeT-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QDoTIBrQtU127iy7HSUL-2" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/tunnel.svg;" vertex="1" parent="1">
-          <mxGeometry x="294" y="152" width="240" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="QDoTIBrQtU127iy7HSUL-6" value="Tunnel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;fontColor=#f00505;" vertex="1" parent="1">
-          <mxGeometry x="391" y="161" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="QDoTIBrQtU127iy7HSUL-7" value="10.0.2.1&lt;br&gt;VPN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="238.5" y="210" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QDoTIBrQtU127iy7HSUL-8" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" vertex="1" parent="1">
+          <mxGeometry x="339.13" y="124.41999999999999" width="163.74" height="103.15" as="geometry" />
+        </mxCell>
+        <mxCell id="QDoTIBrQtU127iy7HSUL-2" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/tunnel.svg;" vertex="1" parent="1">
+          <mxGeometry x="298.5" y="152" width="240" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="QDoTIBrQtU127iy7HSUL-6" value="Tunnel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;fontColor=#f00505;" vertex="1" parent="1">
+          <mxGeometry x="388.5" y="161" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
