@@ -117,7 +117,7 @@ Calculer le Nombre d'hôte pour la plage 192.168.8.0 à 192.168.15.255:
 Hôte      : 2^9 = 512
 Réseau    : 512 / 256 => 2
 Masque    : 32 - 9 => 23 => 255.255.254.0
-Broadcast : 192.168.9.254
+Broadcast : 192.168.9.255
 ```
 
 Résumé:
